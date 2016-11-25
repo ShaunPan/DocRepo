@@ -68,7 +68,7 @@ Git安装[传送门](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89
 
 ##### 控制文件
 
-![](DocRepo/img/Git中文件状态和所属区域转换示意图.png)
+![](/img/Git中文件状态和所属区域转换示意图.png)
 
 - 查看文件状态
 	- 文件状态明细
@@ -187,7 +187,7 @@ Git安装[传送门](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89
 
 	图片演示
 
-	![](DocRepo/img/rm&rmf.PNG)
+	![](/img/rm&rmf.PNG)
 
 
 - 移动文件(实际是文件改名)
