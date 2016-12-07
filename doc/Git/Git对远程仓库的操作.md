@@ -102,6 +102,24 @@ Git提供的一个小技巧,让用户自定义命令,简化用户的输入
 	git co
 
 
+### 提交至远程仓库的一般流程
+
+- 远程仓库为空,本地文件夹不为空时
+	1. 在本地目标文件夹下初始化 `git init`
+	2. 添加文件夹中的文件 `git add * `
+	3. 提交至暂存区 `git commit -m "msg" `
+	4. 与远程仓库建立链接 `git remote [shortname] [repo_url] `
+	5. 提交至远程仓库 `git push [shortname] [branchname]`
+
+- 远程仓库不为空,本地文件夹为空时
+	1. 克隆远程仓库文件至本地文件夹 `git clone [repo_url]`,此时远程仓库和本地目标文件夹已建立链接
+	2. 之后的操作参照上述的2,3,4,5
+
+- 远程仓库和本地仓库都不为空时
+	1. 参照1,2,3,4操作
+	2. 拉去远程仓库中存在的文件,根据情况是否合并,合并拉取` git fetch`,不合并拉取`git pull`
+	3. 提交至远程仓库 `git push [shortname] [branchname]`
+
 
 
 
