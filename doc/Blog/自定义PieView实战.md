@@ -5,6 +5,8 @@
 
 ### 最终效果图
 
+[](https://github.com/ShaunPan/DocRepo/blob/master/img/PieView.PNG)
+
 ### 分析
 
 PieView的具体实现主要是在onDraw方法中,分为以下三个步骤:
@@ -39,7 +41,7 @@ PieView的具体实现主要是在onDraw方法中,分为以下三个步骤:
 
 由于是在每面扇形的中心位置,那么获取当前扇形的角度的一半,根据三角形函数公式算出该点的坐标,如图:
 
-
+[](https://github.com/ShaunPan/DocRepo/blob/master/img/%E5%9D%90%E6%A0%87%E5%88%86%E6%9E%90.PNG)
 图中线AB就是延长线部分,确定A点和B点的坐标就可以画出延长线,其实就是半径OA方向上的延长线,点A所在的位置是扇形弧度的中点,那么对应的角a即为当前扇形角度的一半,那么根据三角函数公式得:sin a = AC / OA ,cos a = OC / OA ==> AC = sin a * OA , OC = cos a * OA,OA即圆半径,那么A点的坐标就出来了.(梦回初中...)  
 
 B的坐标同样的道理,已知角a,OB(r + AB),求BD,OD
